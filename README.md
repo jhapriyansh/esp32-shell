@@ -206,7 +206,7 @@ EmbeddedShell/
 - No heap allocation in the scheduler path
 - No silent failures — every command returns `OK` or `ERR: reason`
 - Shell never touches hardware directly
-- Configuration and execution are decoupled — `--state=1` is the only trigger
+- Configuration and execution are decoupled `--state=1` is the only trigger
 
 ---
 
