@@ -171,35 +171,6 @@ WiFi is built into the ESP32 Arduino core — nothing extra needed.
 
 ---
 
-## Project structure
-
-```
-EmbeddedShell/
-├── EmbeddedShell.ino         # setup() and loop() — nothing else lives here
-├── core_shell.{h,cpp}        # token parser and command dispatch
-├── scheduler.{h,cpp}         # cooperative task runner
-├── gpio_manager.{h,cpp}      # global GPIO ownership — one device per pin
-├── isolation_manager.{h,cpp} # enforces isolated device group rules
-├── logger.{h,cpp}            # ring buffer logger, no heap allocation
-├── morse_engine.{h,cpp}      # shared ITU morse encoder + non-blocking player
-├── devices_led.{h,cpp}
-├── devices_buzzer.{h,cpp}
-├── devices_servo.{h,cpp}
-├── devices_pir.{h,cpp}
-├── devices_ultrasonic.{h,cpp}
-├── devices_temp.{h,cpp}
-├── devices_ldr.{h,cpp}
-├── devices_oled.{h,cpp}
-├── devices_wifi.{h,cpp}
-├── cmd_help.{h,cpp}
-├── cmd_log.{h,cpp}
-├── cmd_system.{h,cpp}
-├── WIRING_AND_TESTS.md       # wiring diagrams + full test suite
-└── README.md
-```
-
----
-
 ## Design rules
 
 - No `delay()` in runtime logic
@@ -221,4 +192,5 @@ EmbeddedShell/
 
 ## License
 
-MIT — do whatever you want, just don't blame me if your servo eats your breadboard.
+MIT
+Do whatever you want, just don't blame me if your servo eats your breadboard.
