@@ -136,8 +136,6 @@ Full command reference: `help <device>` in the serial monitor.
 | OLED SDA | 21 |
 | OLED SCL | 22 |
 
-Full wiring diagrams, breadboard steps, and a pre-power checklist are in [`WIRING_AND_TESTS.md`](WIRING_AND_TESTS.md).
-
 ### Wiring Disclaimer
 
 The pin mapping here is just a **suggestion, not a rule**.
